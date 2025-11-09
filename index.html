@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>🌈 My Interactive Page</title>
+  <title>🙌My Interactive Page🙌</title>
   <style>
     body {
       font-family: 'Poppins', sans-serif;
       text-align: center;
       padding: 2rem;
       transition: all 0.4s ease;
-      background-color: #fff8e7;
-      color: #333;
+      background-color: #fff9e3;
+      color: #fff;
     }
     h1 { font-size: 2.5rem; margin-bottom: 1rem; }
     button {
@@ -19,21 +19,21 @@
       font-size: 1.2rem;
       border: none;
       border-radius: 10px;
-      background-color: #ffd54f;
+      background-color: #ffd74f;
       cursor: pointer;
       transition: background-color 0.3s ease;
     }
-    button:hover { background-color: #ffb300; }
+    button:hover { background-color: #ffb350; }
     .dark {
-      background-color: #222;
+      background-color: #275;
       color: white;
     }
   </style>
 </head>
 <body>
-  <h1 id="welcome">👋 Hello there!</h1>
-  <p id="greeting">Let's make your page come alive ✨</p>
-  <button id="themeBtn">🌗 Toggle Dark Mode</button>
+  <h1 id="Welcom to My Page"> 😍Hello there!</h1>
+  <p id="greeting">Let's make the page come alive 🤩</p>
+  <button id="themeBtn">🌒 Toggle Dark Mode</button>
 
   <script>
     const btn = document.getElementById('themeBtn');
@@ -44,17 +44,17 @@
     });
 
     // Ask for visitor's name
-    const name = prompt("What's your name?");
+    const name = prompt("May I know your name please?");
     if (name) {
-      document.getElementById('welcome').textContent = `Welcome, ${name}! 🎉`;
+      document.getElementById('welcome').textContent = `Welcome, ${name}! 🌹`;
     }
 
     // Dynamic greeting
     const hour = new Date().getHours();
     let message;
-    if (hour < 12) message = "☀️ Good morning!";
-    else if (hour < 18) message = "🌤️ Good afternoon!";
-    else message = "🌙 Good evening!";
+    if (hour < 12) message = "🌞 Good morning!";
+    else if (hour < 18) message = "🌟 Good afternoon!";
+    else message = " 🌜Good evening!";
     document.getElementById('greeting').textContent = message;
   </script>
 </body>
